@@ -17,6 +17,7 @@ describe('Mock adapter', function(){
       .populate()
       .exec(function(err, results){
         results.should.be.an('object');
+        results.name.should.be.equal(fixture.name);
         done();
       });
 
