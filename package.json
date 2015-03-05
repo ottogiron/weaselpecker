@@ -1,0 +1,32 @@
+{
+  "name": "weasel",
+  "version": "0.1.0",
+  "description": "Waterline mocking framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_ENV=test node ./node_modules/.bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ottogiron/weasel.git"
+  },
+  "keywords": [
+    "mocking",
+    "waterline",
+    "sails"
+  ],
+  "author": "Otto Giron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ottogiron/weasel/issues"
+  },
+  "homepage": "https://github.com/ottogiron/weasel",
+  "devDependencies": {
+    "chai": "^2.1.1",
+    "mocha": "^2.1.0"
+  },
+  "dependencies": {
+    "sinon": "^1.13.0",
+    "waterline": "^0.10.18"
+  }
+}
