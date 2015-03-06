@@ -2,7 +2,7 @@
   "name": "weasel",
   "version": "0.1.0",
   "description": "Waterline mocking framework",
-  "main": "index.js",
+  "main": "./lib/weasel.js",
   "scripts": {
     "test": "NODE_ENV=test node ./node_modules/.bin/mocha"
   },

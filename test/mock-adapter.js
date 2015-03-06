@@ -17,9 +17,7 @@ describe('Mock adapter', function(){
       name: 'Juan',
       lastName: 'Perez'
     };
-
-
-
+    
   });
 
   it('should mock find method with results', function(done){
