@@ -25,7 +25,7 @@ ModelMock.find({})
 
 Creates a new instance of a mock model
 
-####setFindResults(str, arr)
+####setResults(str, arr)
 
 Sets mock results for an specific model method call. Results are returned depending the order defined in the array. If there's only one result left it will always return that as result.
 
