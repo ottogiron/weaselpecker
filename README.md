@@ -1,11 +1,17 @@
-# Weasel
+# weaselpecker
 ## Waterline Simple Mocking Library
+
+### Installation
+
+```bash
+npm install weaselpecker --save-dev
+```
 
 ### Quick Example
 ```javascript
-var weasel = require('weasel');
+var weaselpecker = require('weaselpecker');
 // Create a model mock instance
-var ModelMock = weasel.mock();
+var ModelMock = weaselpecker.mock();
 // Set results for find method
 ModelMock.setResults('find', [
   [{name: 'pecker'}]
@@ -20,18 +26,18 @@ ModelMock.find({})
 ```
 ## Documentation
 
-###Weasel
+###weaselpecker
 ####mock([options])
 Creates a new instance of a mock model
 
-*** Options ***
+***Options***
 ##### Array options.extraModelMethods
 Array with custom methods to be attached to the mocked model
 
-*** Example ***
+***Example***
 
 ``` javascript
-var Model = weasel.mock({
+var Model = weaselpecker.mock({
   extraModelMethods: ['findByID']
 });
 
@@ -48,7 +54,7 @@ Model.findByID({})
 
 Sets mock results for an specific model method call. Results are returned depending the order defined in the array. If there's only one result left it will always return that as result.
 
-*** Example ***
+***Example***
 ```javascript
   Model.setResults('find', ['result1', 'result2']);
   //first call
@@ -79,7 +85,7 @@ Clears all mock results.
 
 Sets mock errors for an specific model method call. Results are returned depending the order defined in the array. If there's only one error left it will always return that as error.
 
-*** Example ***
+***Example***
 ```javascript
   Model.setErrors('find', ['error1', 'error2']);
   //first call

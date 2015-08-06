@@ -1,9 +1,9 @@
 var should = require('chai').should();
-var weasel = require('../');
+var weaselpecker = require('../');
 
-describe('Weasel module', function(){
+describe('weaselpecker module', function(){
   it('should create a mock with the correct interface', function(){
-      var ModelMock = weasel.mock({
+      var ModelMock = weaselpecker.mock({
         extraModelMethods: ['findByID']
       });
       ModelMock.should.be.an('object');
