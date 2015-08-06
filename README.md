@@ -1,6 +1,12 @@
 # weaselpecker
 ## Waterline Simple Mocking Library
 
+### Installation
+
+```bash
+npm install weaselpecker --save-dev
+```
+
 ### Quick Example
 ```javascript
 var weaselpecker = require('weaselpecker');
