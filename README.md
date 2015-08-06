@@ -22,7 +22,9 @@ ModelMock.find({})
 
 ###Weasel
 ####mock([options])
+Creates a new instance of a mock model
 
+*** Options ***
 ##### Array options.extraModelMethods
 Array with custom methods to be attached to the mocked model
 
@@ -30,7 +32,7 @@ Array with custom methods to be attached to the mocked model
 
 ``` javascript
 var Model = weasel.mock({
-  extraModelMethods: ['findByID', 'findByID']
+  extraModelMethods: ['findByID']
 });
 
 Model.setResults('findByID',  [fixture1, fixture2] );
@@ -41,8 +43,6 @@ Model.findByID({})
 });
 
 ```
-
-Creates a new instance of a mock model
 
 ####setResults(str, arr)
 
