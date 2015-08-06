@@ -26,7 +26,7 @@
     "mocha": "^2.1.0"
   },
   "dependencies": {
-    "sinon": "^1.13.0",
-    "waterline": "^0.10.18"
+    "lodash": "^3.10.1",
+    "sinon": "^1.13.0"
   }
 }
