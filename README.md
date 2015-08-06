@@ -1,11 +1,11 @@
-# Weasel
+# weaselpecker
 ## Waterline Simple Mocking Library
 
 ### Quick Example
 ```javascript
-var weasel = require('weasel');
+var weaselpecker = require('weaselpecker');
 // Create a model mock instance
-var ModelMock = weasel.mock();
+var ModelMock = weaselpecker.mock();
 // Set results for find method
 ModelMock.setResults('find', [
   [{name: 'pecker'}]
@@ -20,7 +20,7 @@ ModelMock.find({})
 ```
 ## Documentation
 
-###Weasel
+###weaselpecker
 ####mock([options])
 Creates a new instance of a mock model
 
@@ -31,7 +31,7 @@ Array with custom methods to be attached to the mocked model
 ***Example***
 
 ``` javascript
-var Model = weasel.mock({
+var Model = weaselpecker.mock({
   extraModelMethods: ['findByID']
 });
 

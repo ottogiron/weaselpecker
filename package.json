@@ -1,14 +1,14 @@
 {
-  "name": "weasel",
+  "name": "weaselpecker",
   "version": "1.0.0",
   "description": "Waterline mocking framework",
-  "main": "./lib/weasel.js",
+  "main": "./lib/weaselpecker.js",
   "scripts": {
     "test": "NODE_ENV=test node ./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ottogiron/weasel.git"
+    "url": "https://github.com/ottogiron/weaselpecker.git"
   },
   "keywords": [
     "mocking",
@@ -18,9 +18,9 @@
   "author": "Otto Giron",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ottogiron/weasel/issues"
+    "url": "https://github.com/ottogiron/weaselpecker/issues"
   },
-  "homepage": "https://github.com/ottogiron/weasel",
+  "homepage": "https://github.com/ottogiron/weaselpecker",
   "devDependencies": {
     "chai": "^2.1.1",
     "mocha": "^2.1.0"
