@@ -17,7 +17,7 @@ describe('Mock adapter', function(){
       name: 'Juan',
       lastName: 'Perez'
     };
-    
+
   });
 
   it('should mock find method with results', function(done){
@@ -51,6 +51,22 @@ describe('Mock adapter', function(){
     Model.setResults('find',  [fixture1, fixture2] );
 
     Model.find({})
+    .exec(function(err, results){
+      results.name.should.be.equal(fixture1.name);
+      done();
+    });
+
+  });
+
+  it('Should add a custom method ', function(done) {
+
+    var Model = new MockAdapter({
+      extraModelMethods: ['findByID', 'findByID']
+    });
+
+    Model.setResults('findByID',  [fixture1, fixture2] );
+
+    Model.findByID({})
     .exec(function(err, results){
       results.name.should.be.equal(fixture1.name);
       done();
