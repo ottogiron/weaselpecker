@@ -26,8 +26,13 @@ ModelMock.find({})
 ```
 ## Documentation
 
-###weaselpecker
-####mock([options])
+### weaselpecker
+
+### Default available model methods
+```javascript
+['hasJoin', 'join', 'create', 'find', 'findOne', 'update', 'destroy', 'count']
+```
+#### mock([options])
 Creates a new instance of a mock model
 
 ***Options***
@@ -50,7 +55,7 @@ Model.findByID({})
 
 ```
 
-####setResults(str, arr)
+#### setResults(str, arr)
 
 Sets mock results for an specific model method call. Results are returned depending the order defined in the array. If there's only one result left it will always return that as result.
 
@@ -73,7 +78,7 @@ Sets mock results for an specific model method call. Results are returned depend
     });
 ```
 
-####arguments
+#### arguments
   * str: Name of the model method e.g 'find'
   * arr: Array of mock results
 
@@ -81,7 +86,7 @@ Sets mock results for an specific model method call. Results are returned depend
 
 Clears all mock results.
 
-####setErrors(str, arr)
+#### setErrors(str, arr)
 
 Sets mock errors for an specific model method call. Results are returned depending the order defined in the array. If there's only one error left it will always return that as error.
 
@@ -104,10 +109,10 @@ Sets mock errors for an specific model method call. Results are returned dependi
     });
 ```
 
-####arguments
+#### arguments
   * str: Name of the model method e.g 'find'
   * arr: Array of mock errors
 
-####clearErrors()
+#### clearErrors()
 
 Clears all mocked errors.
