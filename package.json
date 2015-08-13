@@ -1,7 +1,7 @@
 {
   "name": "weaselpecker",
   "version": "1.1.1",
-  "description": "Waterline mocking framework",
+  "description": "Waterline simple mocking library",
   "main": "./lib/weaselpecker.js",
   "scripts": {
     "test": "NODE_ENV=test node ./node_modules/.bin/mocha"

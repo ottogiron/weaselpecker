@@ -82,7 +82,7 @@ Sets mock results for an specific model method call. Results are returned depend
   * str: Name of the model method e.g 'find'
   * arr: Array of mock results
 
-####clearResults()
+#### clearResults()
 
 Clears all mock results.
 
