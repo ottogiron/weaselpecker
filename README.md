@@ -57,18 +57,18 @@ Model.findByID({})
 
 #### setResults(str, arr)
 
-Sets mock results for an specific model method call. Results are returned depending the order defined in the array. If there's only one result left it will always return that as result.
+Sets mock results for an specific model method call. Results are returned depending the order defined in the array. If there's only one result left it will always return that as result.  If an `Error` object is listed, it will be passed as an error.
 
 ***Example***
 ```javascript
-  Model.setResults('find', ['result1', 'result2']);
+  Model.setResults('find', [new Error('error1'), 'result2']);
   //first call
   Model.find({})
-    .execute(function(err, result){
-      console.log(result); // result1
+    .exec(function(err, result){
+      console.log(err); // error1
       //second call
       Model.find({})
-      .execute(function(err, result){
+      .exec(function(err, result){
         console.log(result); //result2
         //third call
         Model.find({}, function(err, result){
